@@ -4,9 +4,9 @@ import { Link, NavLink, withRouter } from 'react-router-dom'; //? withRouter is 
 const Navbar = (props) => {
 
   // console.log(props)
-  setTimeout( () => {
-    props.history.push('/about')
-  }, 2000)
+  // setTimeout( () => {
+  //   props.history.push('/about')
+  // }, 2000)
 
   return (
     <nav className="nav-wrapper red darken-2">
@@ -28,4 +28,5 @@ const Navbar = (props) => {
   );
 };
 
-export default withRouter(Navbar);
+// export default withRouter(Navbar);
+export default Navbar;
