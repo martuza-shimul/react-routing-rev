@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, NavLink, withRouter } from 'react-router-dom'; //? withRouter is an higher-order component
+import { Link, NavLink } from 'react-router-dom';
+// import { Link, NavLink, withRouter } from 'react-router-dom'; //? withRouter is an higher-order component
 
 const Navbar = (props) => {
 
