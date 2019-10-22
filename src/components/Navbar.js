@@ -1,7 +1,13 @@
 import React from "react";
 import { Link, NavLink, withRouter } from 'react-router-dom'; //? withRouter is an higher-order component
 
-const Navbar = () => {
+const Navbar = (props) => {
+
+  // console.log(props)
+  setTimeout( () => {
+    props.history.push('/about')
+  }, 2000)
+
   return (
     <nav className="nav-wrapper red darken-2">
       <div className="container">
@@ -22,4 +28,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default withRouter(Navbar);
